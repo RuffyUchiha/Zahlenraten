@@ -1,0 +1,80 @@
+object Form1: TForm1
+  Left = 404
+  Height = 429
+  Top = 134
+  Width = 558
+  Caption = 'Form1'
+  ClientHeight = 429
+  ClientWidth = 558
+  LCLVersion = '3.0.0.3'
+  object NeuButton: TBitBtn
+    Left = 68
+    Height = 33
+    Top = 248
+    Width = 90
+    Caption = 'Neue Zahl'
+    Kind = bkRetry
+    ModalResult = 4
+    OnClick = NeuButtonClick
+    TabOrder = 0
+  end
+  object RatenButton: TBitBtn
+    Left = 216
+    Height = 30
+    Top = 248
+    Width = 80
+    Caption = 'Raten'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = RatenButtonClick
+    TabOrder = 1
+  end
+  object AbbrechenButton: TBitBtn
+    Left = 365
+    Height = 30
+    Top = 248
+    Width = 75
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    ModalResult = 2
+    OnClick = AbbrechenButtonClick
+    TabOrder = 2
+  end
+  object AusgabeEdit: TPanel
+    Left = 67
+    Height = 76
+    Top = 152
+    Width = 376
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 67
+    Height = 15
+    Top = 120
+    Width = 210
+    Caption = 'Bitte Wählen Sie eine Zahl von 1 bis 100:'
+  end
+  object EingabeEdit: TEdit
+    Left = 360
+    Height = 23
+    Top = 112
+    Width = 80
+    TabOrder = 4
+  end
+  object Panel2: TPanel
+    Left = 68
+    Height = 50
+    Top = 32
+    Width = 375
+    Caption = 'Zahlenraten'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -27
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+  end
+end
